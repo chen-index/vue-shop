@@ -1,6 +1,6 @@
 <template>
   <section class="order">
-    <HeaderTop title="订单列表"></HeaderTop>
+    <HeaderTop title="订单列表"/>
     <section class="order_no_login">
       <img src="./images/person.png">
       <h3>登录后查看外卖订单</h3>
@@ -10,18 +10,16 @@
 </template>
 
 <script>
-    import HeaderTop from "../../components/HeaderTop/HeaderTop"
-    export default {
-        data() {
-            return {}
-        },
-        components:{
-            HeaderTop
-        }
+  import HeaderTop from '../../components/HeaderTop/HeaderTop.vue'
+  export default {
+    components: {
+      HeaderTop
     }
+  }
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
+  @import "../../common/stylus/mixins.styl"
   .order  //订单
     width 100%
     .header

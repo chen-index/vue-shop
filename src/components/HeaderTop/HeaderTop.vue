@@ -1,8 +1,5 @@
 <template>
   <header class="header">
-    <span class="header_search">
-      <i class="iconfont icon-sousuo"></i>
-    </span>
     <slot name="left"></slot>
     <span class="header_title">
       <span class="header_title_text ellipsis">{{title}}</span>
@@ -12,14 +9,12 @@
 </template>
 
 <script>
-    export default {
-        data() {
-            return {}
-        },
-        props:{
-            title:String
-        }
-    }
+
+  export default {
+    props: {
+      title: String
+    },
+  }
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus">
